@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sathni Hansani | Digital Business Card</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  background: #eaeef3;
+  font-family: 'Inter', sans-serif;
+}
+
+/* CARD */
+.card {
+  width: 92%;
+  max-width: 520px;
+  min-height: 700px;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  background: url("./card-bg.jpg") center / cover no-repeat;
+}
+
+/* LIGHT OVERLAY */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.1);
+  z-index: 0;
+}
+
+/* CONTENT */
+.card-content {
+  position: relative;
+  z-index: 1;
+  padding: 40px 35px;
+  text-align: center;
+  color: #0f172a;
+}
+
+/* COMPANY LOGO */
+.company-logo {
+  width: 75px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/* COMPANY NAME */
+.company-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+/* PROFILE */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #2563eb;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* NAME & POSITION */
+h1 {
+  margin: 8px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* DESCRIPTION */
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 12px 0;
+  color: #475569;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.buttons a {
+  padding: 14px;
+  border-radius: 50px;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.15s ease;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.buttons a:hover {
+  background: #1d4ed8;
+}
+
+.buttons a:active {
+  transform: scale(0.97);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="card-content">
+
+    <!-- COMPANY LOGO -->
+    <img src="./logo.png" alt="Master Wovenlanka Label logo" class="company-logo">
+
+    <!-- COMPANY NAME -->
+    <div class="company-name">
+      Master Wovenlanka Label (Pvt) Ltd
+    </div>
+
+    <!-- PROFILE -->
+    <img src="./profile.jpg" alt="Photo of Sathni Hansani" class="profile-pic">
+
+    <!-- NAME & POSITION -->
+    <h1>Sathni Hansani</h1>
+    <h3>Office Manager</h3>
+
+    <!-- DESCRIPTION -->
+    <p>
+      We specialize in high-quality woven labels, printed care labels, and heat seal labels with over 15 years of experience.
+      Customers are always our top priority. With 24-hour production, we ensure fast and reliable delivery at competitive market prices.
+      Please don’t hesitate to contact us to discuss your needs.
+    </p>
+
+    <!-- CONTACT -->
+    <p>Email: <a href="mailto:sathni@brilliant.lk">sathni@brilliant.lk</a></p>
+    <p>Phone: <a href="tel:+94776461948">+94 77 646 1948</a></p>
+    <p>
+      Address:
+      <a href="https://www.google.com/maps/search/?api=1&query=No. 17, Condrad Premathirathna Mv, Seeduwa, Katunayake" target="_blank">
+        No. 17, Condrad Premathirathna Mv, Seeduwa, Katunayake
+      </a>
+    </p>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+      <a href="mailto:sathni@brilliant.lk?subject=Business%20Inquiry&body=Hello%20Sathni," target="_blank">
+        Email Me
+      </a>
+
+      <a href="https://wa.me/94776461948?text=Hello%20Sathni" target="_blank">
+        WhatsApp Me
+      </a>
+
+      <a href="https://brilliant.lk/" target="_blank">
+        🌐 Visit Our Website
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
